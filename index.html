@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Note App</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     
+    <header class="head">
+        <h1>Note App</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="control-bar flex">
+                <a href="#">
+                    <img src="assets/img/plus.png" alt="plus icon">
+                </a>
+                <div class="bar flex hide">
+                    <a href="#" class="color" data-color="yellow"></a>
+                    <a href="#" class="color" data-color="blue"></a>
+                    <a href="#" class="color" data-color="pink"></a>
+                    <a href="#" class="color" data-color="orange"></a>
+                    <a href="#" class="color" data-color="purple"></a>
+                </div>
+                
+            </div>
+            <div class="overlay hide-overlay">
+
+            </div>
+            <div class="add-modal hide-modal">
+                <input type="text" placeholder="Note Title">
+                <textarea name="body" id="note-body" rows="5" placeholder="Note Body"></textarea>
+                <button type="submit" id="add-btn">Add Note</button>
+                <button type="submit" id="update-btn">Update Note</button>
+            </div>
+            <div class="notes-container"></div>
+            <button class="delete-all-btn">Delete All</button>
+        </div>
+    </main>
+    <script src="assets/js/helpers.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
+
 </html>
