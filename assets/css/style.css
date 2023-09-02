@@ -26,7 +26,6 @@ body {
     font-family: 'Ubuntu', sans-serif;
     background-color: var(--bg-dark);
     color: var(--text-dark);
-    background-image: linear-gradient(rgba(49, 49, 49, 0.7), rgba(49, 49, 49, 0.7)), url(../img/bg.jpg);
     background-size: cover;
 }
 

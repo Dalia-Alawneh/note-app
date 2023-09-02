@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Note App</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        if (typeof (Storage) !== "undefined") {
+            console.log("Local storage is not supported");
+        } else {
+            document.write("Please enable localstorage..")
+        }
+
+    </script>
 </head>
+
 <body>
-    
+
     <header class="head">
         <h1>Note App</h1>
     </header>
@@ -24,7 +34,7 @@
                     <a href="#" class="color" data-color="orange"></a>
                     <a href="#" class="color" data-color="purple"></a>
                 </div>
-                
+
             </div>
             <div class="overlay hide-overlay">
 
